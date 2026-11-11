@@ -48,6 +48,25 @@
                 Console.Write("{0} ", i);
             }
             Console.WriteLine();
+
+            // 5. feladat: A program generáljon 10 darab véletlenszámot [0;50] intervallumon,
+            //  de csak a 4-gyel oszthatóakat írja ki a képernyőre. Határozza meg a 4-gyel osztható számok átlagát!
+            Console.WriteLine("5. feladat");
+            Random rnd = new Random();
+            double avg;
+            int sum4 = 0, count = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                int tmp = rnd.Next(0, 51);
+                if (tmp % 4 == 0)
+                {
+                    Console.Write("{0} ", tmp);
+                    sum4 += tmp;
+                    count++;
+                }
+            }
+            avg = sum4 / (double)count;
+            Console.WriteLine("\nÁtlag: {0:0.00}", avg);
         }
     }
 }
