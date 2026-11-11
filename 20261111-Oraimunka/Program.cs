@@ -14,6 +14,18 @@
             {
                 Console.WriteLine("{0} * {1} = {2}", num, i, num * i);
             }
+            Console.WriteLine();
+
+            // 2. feladat: Készítsen programot, amely beolvas egy N számot, és kiszámolja a faktoriálisát (Pl. 3! = 3 × 2 × 1 = 6)!
+            Console.WriteLine("2. feladat");
+            int n, factorial = 1;
+            Console.Write("Adjon meg egy egész számot: ");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                factorial *= i;
+            }
+            Console.WriteLine("{0}! = {1}", n, factorial);
         }
     }
 }
