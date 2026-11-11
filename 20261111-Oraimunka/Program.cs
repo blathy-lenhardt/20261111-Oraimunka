@@ -39,6 +39,15 @@
             }
             while (num3 != 0);
             Console.WriteLine("A megadott számok összege: {0}", sum);
+
+            // 4. feladat: Készítsen egy programot, amely [1; 40] intervallumon kiírja a 3-mal osztható számokat
+            //  egy sorba szóközzel elválasztva!
+            Console.WriteLine("4. feladat");
+            for (int i = 3; i <= 40; i+=3)
+            {
+                Console.Write("{0} ", i);
+            }
+            Console.WriteLine();
         }
     }
 }
